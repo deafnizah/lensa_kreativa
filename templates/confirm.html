@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konfirmasi Pemesanan</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Lensa Kreativa Studio</h1>
+                    <h3>"Mengabadikan Momen, Menciptakan Keajaiban"</h3>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('pesan') }}">Pesan</a></li>
+                        <li><a href="{{ url_for('index') }}">Layanan</a></li>
+                        <li><a href="{{ url_for('index') }}">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <section class="container">
+        <h1>Konfirmasi Pemesanan</h1>
+        <h2>Berikut adalah data pemesanan Anda:</h2>
+        <p><strong>Nama:</strong> {{ nama }}</p>
+        <p><strong>Tanggal Pemotretan:</strong> {{ tanggal }}</p>
+        <p><strong>Paket:</strong> {{ paket }}</p>
+        <p><strong>Sesi:</strong> {{ sesi }}</p>
+
+        <p>Apakah Anda yakin dengan pemesanan ini?</p>
+        <a href="{{ url_for('index') }}"><button type="submit">Yakin</button></a>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lensa Kreativa Studio | Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>

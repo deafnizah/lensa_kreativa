@@ -1,0 +1,178 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #ccbbb3;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #1F1C1B; /* Mengganti warna background navbar */
+    color: #da9007; /* Mengganti warna teks navbar */
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo h1 {
+    font-size: 24px;
+}
+
+.navbar nav ul {
+    display: flex;
+    list-style: none;
+}
+
+.navbar nav ul li {
+    margin: 0 15px;
+}
+
+.navbar nav ul li a {
+    color: #da9007; /* Mengganti warna link navbar */
+    font-size: 16px;
+}
+
+/* Hero Section */
+#hero {
+    background-image: url('/static/bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+#hero .hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+#hero .btn-primary {
+    padding: 10px 20px;
+    background-color: #7f1715; /* Mengganti warna tombol utama */
+    color: white;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+/* Section Latar Belakang */
+#latar-belakang {
+    padding: 40px 0;
+    background-color: #ccbbb3;
+}
+
+#latar-belakang h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #1F1C1B; /* Mengganti warna teks */
+}
+
+/* Layanan */
+#layanan {
+    background-color: #ccbbb3;
+    padding: 40px 0;
+}
+
+#layanan h2 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #1F1C1B; /* Mengganti warna teks */
+}
+
+.services {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.service {
+    background-color: #f3f0eb;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+}
+
+.service h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #1F1C1B; /* Mengganti warna judul layanan */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1F1C1B; /* Mengganti warna footer */
+    color: #da9007; /* Mengganti warna teks footer */
+    padding: 20px 0;
+}
+
+/* Form Styles */
+.container {
+    width: 80%;
+    margin: 20px auto;
+    background-color: #f3f0eb;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    color: #b5431d; /* Mengganti warna judul */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #f3f0eb;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #703715; /* Mengganti warna tombol */
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #AF8E6A; /* Mengganti warna tombol saat hover */
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    text-decoration: none;
+    color: #da9007; /* Mengganti warna link */
+}
+
+a:hover {
+    text-decoration: underline;
+}

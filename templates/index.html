@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lensa Kreativa Studio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">
+                <h1>Lensa Kreativa Studio</h1>
+                <h3>"Mengabadikan Momen, Menciptakan Keajaiban"</h3>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="{{ url_for('pesan') }}">Pesan</a></li>
+                    <li><a href="#layanan">Layanan</a></li>
+                    <li><a href="#contact">Kontak</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h2>Abadikan Momen Spesial Anda Dengan Foto Profesional</h2>
+            <p>Ingin mengabadikan momen wisuda? Kami siap membantu Anda!</p>
+            <a href="#layanan" class="btn-primary">Layanan Kami</a>
+        </div>
+    </section>
+
+    <section id="latar-belakang">
+        <div class="container">
+            <h2>Kenapa Memilih Kami?</h2>
+            <p>Lensa Kreativa Studio hadir dengan tujuan untuk membantu mahasiswa mengabadikan momen penting dalam hidup mereka, terutama pada saat wisuda. Kami percaya bahwa momen wisuda adalah pencapaian yang sangat berharga dan layak didokumentasikan dengan kualitas terbaik. Lensa Kreativa Studio berkomitmen untuk menyediakan layanan fotografi profesional yang tidak hanya menangkap gambar, tetapi juga menghadirkan keajaiban dalam setiap potret.</p>
+        </div>
+    </section>
+
+    <section id="layanan">
+        <div class="container">
+            <h2>Layanan Kami</h2>
+            <div class="services">
+                <div class="service">
+                    <h3>Sesi Foto Pre-Wisuda</h3>
+                    <p>Sesi foto pribadi atau kelompok sebelum hari wisuda untuk menangkap momen persiapan atau kenangan bersama teman-teman.</p>
+                </div>
+                <div class="service">
+                    <h3>Sesi Foto Selama Wisuda</h3>
+                    <p>Dokumentasi saat wisudawan menerima ijazah dan momen berharga lainnya selama acara wisuda berlangsung.</p>
+                </div>
+                <div class="service">
+                    <h3>Sesi Foto Pasca-Wisuda</h3>
+                    <p>Sesi foto bersama keluarga dan teman-teman setelah acara wisuda, termasuk momen perayaan.</p>
+                </div>
+                <div class="service">
+                    <h3>Paket Editing</h3>
+                    <p>Semua foto akan melalui proses editing untuk memastikan kualitas gambar terbaik, dengan opsi penyesuaian warna dan efek sesuai permintaan.</p>
+                </div>
+            </div>
+            <a href="#contact" class="btn-primary">Hubungi Kami</a>
+            <a href="{{ url_for('pesan') }}" class="btn-primary">Pesan Sekarang</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <p>Alamat: Desa Blater No. 33 Kec. Kalimanah, Kab. Purbalingga</p>
+            <p>Email: info@lensakreativa.com</p>
+            <p>Telepon: +62 123 456 789</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lensa Kreativa Studio | Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>

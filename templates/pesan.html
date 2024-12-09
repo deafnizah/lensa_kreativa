@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan Lensa Kreativa Studio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+            <div class="navbar">
+                <div class="logo">
+                    <h1>Lensa Kreativa Studio</h1>
+                    <h3>"Mengabadikan Momen, Menciptakan Keajaiban"</h3>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="{{ url_for('pesan') }}">Pesan</a></li>
+                        <li><a href="{{ url_for('index') }}">Layanan</a></li>
+                        <li><a href="{{ url_for('index') }}">Kontak</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+
+    <section class="container">
+        <h1>Pemesanan Lensa Kreativa Studio</h1>
+        <h2>Isi Formulir Pemesanan</h2>
+        <form action="{{ url_for('pesan') }}" method="POST">
+            <label for="nama">Nama:</label>
+            <input type="text" id="nama" name="nama" required><br><br>
+
+            <label for="tanggal">Tanggal Pemotretan:</label>
+            <input type="date" id="tanggal" name="tanggal" required><br><br>
+
+            <label for="paket">Pilih Paket:</label>
+            <select id="paket" name="paket" required>
+                <option value="Paket A">Paket A</option>
+                <option value="Paket B">Paket B</option>
+                <option value="Paket C">Paket C</option>
+            </select><br><br>
+
+            <label for="sesi">Sesi Pemotretan:</label>
+            <select id="sesi" name="sesi" required>
+                <option value="Pagi">Pagi</option>
+                <option value="Siang">Siang</option>
+                <option value="Sore">Sore</option>
+            </select><br><br>
+
+            <button type="submit">Konfirmasi Pemesanan</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Lensa Kreativa Studio | Semua Hak Dilindungi</p>
+    </footer>
+</body>
+</html>
